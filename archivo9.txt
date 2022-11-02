@@ -1,0 +1,7 @@
+Nombre del Ensayo; H.S. P 1;  H.A.;  H.S p2;  T.A.;  H.S. p3;  H.S. p4; Altura P1 Altura P2 Altura P3; Altura P4;  fecha
+decimo 4º;   181;   44;   466;   26;   469;   483;   3;   6;   9;  12;   Monday 20th of April 2020 07:52:59 PM
+decimo 4º;   181;   43;   464;   26;   466;   488;   3;   6;   9;  12;   Monday 20th of April 2020 07:53:10 PM
+decimo 4º;   182;   43;   466;   26;   468;   486;   3;   6;   9;  12;   Monday 20th of April 2020 07:53:20 PM
+decimo 4º;   181;   43;   467;   26;   468;   487;   3;   6;   9;  12;   Monday 20th of April 2020 07:53:31 PM
+decimo 4º;   180;   43;   467;   26;   468;   487;   3;   6;   9;  12;   Monday 20th of April 2020 07:53:41 PM
+decimo 4º;   180;   43;   466;   26;   469;   484;   3;   6;   9;  12;   Monday 20th of April 2020 07:53:52 PM

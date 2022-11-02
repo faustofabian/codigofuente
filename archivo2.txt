@@ -1,0 +1,7 @@
+Nombre del Ensayo; H.S. P 1;  H.A.;  H.S p2;  T.A.;  H.S. p3;  H.S. p4; Altura P1 Altura P2 Altura P3; Altura P4;  fecha
+sexto ensayo;   1019;   38;   574;;   2;;   015;;   015<;   3;   6;   9;  12;   Wednesday 15th of April 2020 09:40:54 PM
+sexto ensayo;   1018;   37;   576;;   2;;   016;;   014<;   3;   6;   9;  12;   Wednesday 15th of April 2020 09:41:04 PM
+sexto ensayo;   1015;   38;   572;;   2;;   017;;   014<;   3;   6;   9;  12;   Wednesday 15th of April 2020 09:41:15 PM
+sexto ensayo;   1018;   37;   573;;   2;;   017;;   019<;   3;   6;   9;  12;   Wednesday 15th of April 2020 09:41:26 PM
+sexto ensayo;   1019;   37;   575;;   2;;   016;;   017<;   3;   6;   9;  12;   Wednesday 15th of April 2020 09:41:36 PM
+sexto ensayo;   1018;   37;   571;;   2;;   019;;   019<;   3;   6;   9;  12;   Wednesday 15th of April 2020 09:41:47 PM

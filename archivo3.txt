@@ -1,0 +1,7 @@
+Nombre del Ensayo; H.S. P 1;  H.A.;  H.S p2;  T.A.;  H.S. p3;  H.S. p4; Altura P1 Altura P2 Altura P3; Altura P4;  fecha
+septimo;   1019;   41;   1017;   22;   1019;   1018;   3;   6;   9;  12;   Wednesday 15th of April 2020 10:21:14 PM
+septimo;   1020;   41;   1016;   22;   1019;   1017;   3;   6;   9;  12;   Wednesday 15th of April 2020 10:21:25 PM
+septimo;   1020;   41;   1018;   22;   1013;   1018;   3;   6;   9;  12;   Wednesday 15th of April 2020 10:21:35 PM
+septimo;   1020;   41;   1017;   22;   1017;   1016;   3;   6;   9;  12;   Wednesday 15th of April 2020 10:21:46 PM
+septimo;   1020;   41;   1019;   22;   1017;   1018;   3;   6;   9;  12;   Wednesday 15th of April 2020 10:21:57 PM
+septimo;   1020;   41;   1020;   22;   1018;   1015;   3;   6;   9;  12;   Wednesday 15th of April 2020 10:22:07 PM

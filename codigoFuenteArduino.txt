@@ -1,0 +1,64 @@
+// DEMON JR //
+
+#include <SPI.h>
+#include <Ethernet.h>
+#include "DHT.h"
+#define DHTPIN 7
+#define DHTTYPE DHT11 
+DHT dht(DHTPIN, DHTTYPE);
+//--------------------------------------------------------------------------------------------
+//Declaración de la direcciones MAC e IP. También del puerto 80
+byte mac[]={0xDE,0xAD,0xBE,0xEF,0xFE,0xED}; //MAC
+IPAddress ip(192,168,0,4);                  //IP (DIRECCION A LA QUE SE VA A ACCESAR DESDE EL BROWSER) DEBE ESTAR DENTRO DE TU RED
+EthernetServer servidor(80);                // SE DEFINE EL PUERTO 
+//--------------------------------------------------------------------------------------------
+
+
+
+void setup()
+           {
+            Ethernet.begin(mac, ip); // SE INICIA LA CONEXION ETHERNET , SE INVOCA LA MAC Y LA  IP 
+            servidor.begin();        // SE INICIA EL PUERTO
+            dht.begin();             // SE INICIA EL SENSOR DTH11
+            }
+
+void loop()
+          {
+          EthernetClient cliente = servidor.available();   // SE DEFINE EL CLIENTE (DISPONIBILIDAD DE SERVIDOR)
+          if(cliente.available())                         // SI EL CLIENTE TIENE PETICIONES REPRODUCE EL SIGUIENTE CODIGO
+                                {
+                                 int h = dht.readHumidity();  //SE LEE LA HUMEDAD RECIBIDA POR EL SENSOR
+                                 int t= dht.readTemperature(); //SE LEE LA TEMPERATURA RECIBIDA POR EL SENSOR
+                                 cliente.println("HTTP/1.1 200 OK");
+                                 cliente.println("Content-Type: text/html");
+                                 cliente.println("Connection: close");
+                                 cliente.println("Refresh: 5");
+                                 cliente.println();
+                                 cliente.print("<!DOCTYPE html>"); //SE MANDA A IMPRESION EL CODIGO HTML
+                                 cliente.print("<html lang='es'>");
+                                 cliente.println("<head>");
+                                 cliente.println("<title>.:Indicador del Sensor de temparatura en Tiempo Real:. </title>");
+                                 cliente.println("<meta charset='utf-8'>");
+                                 cliente.println("</head>");
+                                 cliente.println("<body >");
+                                 cliente.print("//fausto ");
+                                 cliente.print(analogRead(0)); // Se lee en sensor nro 1
+                                 cliente.print(";"); 
+                                 cliente.print(h);             // SE IMPRIME LA HUMEDAD RECIBIDA EN LA VARIABLE H
+                                 cliente.print(";");
+                                 cliente.print(analogRead(1)); //Se lee en sensor nro 2
+                                 cliente.print(";");
+                                 cliente.print(t);           // SE IMPRIME LA TEMPERATURA RECIBIDA EN LA VARIABLE T
+                                 cliente.print(";");
+                                 cliente.print(analogRead(2)); //Se lee en sensor nro 3
+                                 cliente.print(";");
+                                 cliente.print(analogRead(3)); //Se lee en sensor nro 4
+                                 cliente.println("</body>");
+                                 cliente.println("</html>");   // SE CIERRA EL CODIGO HTML
+                                 cliente.stop();               // SE CIERRA LA IMPRESION DE DATOS EN EL CLIENTE
+                                 delay(3000);                   //  TIEMPO DE ESPERA PARA QUE SE ACTUALICE LA PAGINA
+        }
+         
+  }
+    
+  
